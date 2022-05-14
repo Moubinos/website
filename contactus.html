@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>25/8 Stores About Us</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="#" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<style>
+
+body {
+  font-family: "arial", sans-serif;
+  background-color: rgb(145, 145, 145);
+}
+  .mainpart {
+    font-size: 28px; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  outline: none; 
+  border-radius: 6px;
+}
+#search-btn{
+  float: right;
+  padding: 6px;
+  margin-top: 10px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(228, 228, 127);
+}
+.carticon{
+  float: right;
+  margin-top: 10px;
+}
+#img {
+    background-image: url(images/ext.jpg);
+    height: 500px;
+    background-size: cover; 
+}
+#details {
+    background-color: rgba(163, 139, 2, 0.897);
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    margin-left: 300px;
+    margin-right: 700px;
+    border-radius: 10px;
+    font-size: 20px;
+    float: center;
+} 
+hr.divider {
+  border-top: 8px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.container {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.788);
+  font-size: 6vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.footer-container{
+  background-color: rgb(48, 48, 48);
+  padding-bottom: 2rem;
+}
+.footer{
+  width: fit-content;
+  height: 15vh;
+  background-color:rgb(48, 48, 48) ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+.footer-detail {
+  display: flex;
+  flex-direction: column ;
+  margin-right: 4rem;
+}
+.footer-detail a{
+  color: rgba(156, 156, 127, 0.863);
+  text-decoration: none;
+}
+.footer-detail a:hover{
+  color: white;
+}
+#footeremail{
+  border-radius: 6px;
+  width: 300px;
+  height: 40px;
+}
+.footeremail{
+  color: rgba(156, 156, 127, 0.863);
+}
+#footeremail::placeholder{
+  font-size: 25px;
+}
+#emailbtn{
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+.contmisc{
+  float: right;
+}
+#form {
+    width: 500px;
+    margin: 100px auto;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-left: 75px;
+    float: left;
+}
+
+table {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(146, 146, 145);
+    color: rgb(0, 0, 0);
+}
+
+table td {
+    height: 50px;
+    padding: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formtext {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+#title{
+    text-align: center;
+    font-size: large;
+}
+.textbutton{
+    float: center;
+    background-color: rgba(163, 139, 2, 0.897);
+}
+.textbutton:hover{
+    background-color: green;
+}
+#details1 {
+    background-color: rgba(163, 139, 2, 0.897);
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    margin-left: 800px;
+    margin-right: 75px;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    float: center;
+} 
+#details2{
+    float: right;
+    margin-right: 175px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 30%;
+    text-align: center;
+    color:black;
+}
+.phonetable{
+    text-align: left;
+    
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="mainpage.html">Home</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+      <input type="button" value="Go!" id="search-btn">
+      <input  type="text" placeholder="Search..">
+      <a href="#">
+        <img src="images/cart.png" style="width:3%;" alt="" class="carticon" >
+      </a>
+    </div>
+  </nav>
+
+    <div class="mainpart" >
+         <h1 class="container" >Contact Us</h1>  
+    <div id="img">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr class="divider">
+    <div>
+        <div id="form">
+            <table>
+                <form action="">
+                    <tr>
+                        <td colspan="2" id="title"><b>CONTACT FORM</b></td>
+                    </tr>
+                     <tr>
+                         <td>First Name</td>
+                         <td><input type="text" class="formtext" name="fname" placeholder="Your First Name"></td>
+                     </tr>
+                     <tr>
+                         <td>Last Name</td>
+                         <td><input type="text" class="formtext" name="lname" placeholder="Your Last Name"></td>
+                     </tr>
+                     <tr>
+                        <td>Email</td>
+                        <td><input type="email" class="formtext" placeholder="Your email" required></td>
+                     </tr>
+                     <tr>
+                    <tr>
+                    <tr>
+                        <td colspan="2">Details</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="height">
+                            <textarea rows="6" class="formtext"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" class="textbutton" value="SEND"></td>
+                        <td><input type="reset" class="textbutton" value="CLEAN"></td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+    <div id="details1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget justo sed odio placerat porttitor. Nullam sed vestibulum lacus. Cras ultricies tellus et urna finibus, id euismod ex facilisis. Nam volutpat mattis feugiat. Praesent lacus sem, scelerisque ut nisl ut, volutpat ullamcorper enim. Maecenas accumsan eros ac lorem malesuada, ut vulputate orci suscipit. Etiam ac ante faucibus, luctus diam vel, posuere mi. Donec nec fringilla eros, at mollis tellus.
+          Aliquam sed pretium nunc, elementum elementum lacus.</p>
+      </div>
+    <div id="details2">
+        <p><b>OUR CONTACT DETAILS:</b></p>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Address</th>
+                <th scope="col">Phone Number</th>
+              </tr>
+            </thead>
+            <tbody class="phonetable">
+              <tr>
+                <td>Address 1</td>
+                <td>210 1111111</td>
+              </tr>
+              <tr>
+                <td>Address 2</td>
+                <td>210 2222222</td>
+              </tr>
+              <tr>
+                <td>Address 3</td>
+                <td>210 3333333</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="footer-container">
+        <div class="footer"> 
+            <div class="footer-detail 1">
+                <a href="https://www.instagram.com/chxwdury/">
+                <h2 style="text-align:center;">Instagram <br>
+                    <img src="images/insta.png" alt="" width="50">
+                </h2>
+                </a>
+            </div>
+        <a href="#">
+        <div class="footer-detail 2">
+            <h2 style="text-align:center;">Facebook <br>
+                <img src="images/face.png" alt="" width="45">
+            </h2>
+        </a>
+      </div>
+            <a href="https://youtu.be/dQw4w9WgXcQ">
+                <div class="footer-detail 3">
+                    <h2 style="text-align:center;">Youtube <br> 
+                        <img src="images/utube.png" alt="" width="59">
+                    </h2>
+            </a>
+                </div>
+      <div class="footeremail" >
+        <h2>Join Our Newsletter</h2>
+        <input type="email" placeholder="Enter your Email" id="footeremail">
+        <input type="submit" value="Sign Up" id="emailbtn">
+      </div>
+    </div>  
+  </div>
+
+</div>
+
+</body>
+</html> 
+
